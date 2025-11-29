@@ -335,6 +335,8 @@ function importSaveString(jsonString) {
             });
             
             gameController.setHomeBaseBricks(newHomeBaseBricks);
+            // FIX: Set this flag to prevent sketch.js from overwriting the loaded layout with the default one
+            state.isInitialHomeBaseLayoutLoaded = true;
         }
         
         // Final Updates
